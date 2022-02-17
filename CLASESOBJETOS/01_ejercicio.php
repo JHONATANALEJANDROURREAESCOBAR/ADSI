@@ -2,8 +2,8 @@
 
   class Vehiculo {
   
-  public $placa;
-  public $marca;
+  protected $placa;
+  private $marca;
   public $modelo;
   public $kilometraje;
   public $velocidad;
@@ -39,9 +39,22 @@
         return $vr_distancia;
 
     }
+//metodos getters y setters
 
+//getter mostrar la informacion del atributo marca
+public function getmarca(){
+    return $this->marca;
 }
-
-
-
+//setter asignar la informacion al atributo marca 
+public function setmarca($marca){
+    $this->marca = $marca;
+}
+public function getPlaca(){
+    return $this->placa;
+}
+public function setPlaca(){
+    return $this->placa;
+}
+}
+  
 ?>
